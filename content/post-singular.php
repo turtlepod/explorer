@@ -27,7 +27,7 @@
 	</div><!-- .entry-wrap -->
 
 </article><!-- .entry -->
-
-<?php tamatebako_entry_nav(); ?>
+<?php get_template_part( 'pagination-singular' ); ?>
+<?php //tamatebako_entry_nav(); ?>
 
 <?php comments_template( '', true ); // Load comments. ?>

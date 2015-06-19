@@ -135,13 +135,18 @@ code{
 }
 	.loop-title{
 		margin: 0;
-		font-size: 17px;
-		font-size: 1.7rem;
+		font-size: 20px;
+		font-size: 2rem;
 	}
-	.loop-description{
-		display: none;
+	.loop-title:before{
+		content: "\f464";
+		font-family: "dashicons";
+		vertical-align: top;
+		margin-right: 5px;
+		margin-right: 0.5rem;
+		color: #444;
+		-webkit-font-smoothing: antialiased;
 	}
-
 
 /* === #10 - ENTRY === */
 .entry{
@@ -154,6 +159,9 @@ code{
 }
 .entry:after{
 	content:".";display:block;height:0;clear:both;visibility:hidden;
+}
+.plural .content-entry-wrap .entry:last-child{
+	border: none;
 }
 /* Entry Wrap */
 .entry-wrap{
@@ -180,7 +188,6 @@ code{
 			width:70%;
 			padding-left: 60px;
 			padding-left: 6rem;
-			border-right: 1px solid #ccc;
 			float: left;
 			position: relative;
 		}
@@ -195,6 +202,9 @@ code{
 		/* Byline */
 		.entry-byline{
 			color: #444;
+			float: left;
+			padding-left: 10px;
+			padding-left: 1rem;
 		}
 		.entry-footer .entry-byline{
 			margin-bottom: 0;
@@ -215,15 +225,6 @@ code{
 				color: #ccc;
 				-webkit-font-smoothing: antialiased;
 			}
-			.entry-permalink:before{
-				content: "\f103";
-				font-family: "dashicons";
-				vertical-align: top;
-				margin-right: 5px;
-				margin-right: 0.5rem;
-				color: #ccc;
-				-webkit-font-smoothing: antialiased;
-			}
 			.entry-published:before{
 				content: "\f469";
 				font-family: "dashicons";
@@ -233,16 +234,19 @@ code{
 				color: #ccc;
 				-webkit-font-smoothing: antialiased;
 			}
+			.comments-link{
+				display: block;
+			}
 			.comments-link:empty{
 				display: none;
 			}
 			.comments-link:before{
-				content: " | ";
-			}
-			.comments-link:after{
 				content: "\f101";
 				font-family: "dashicons";
 				vertical-align: middle;
+				margin-right: 5px;
+				margin-right: 0.5rem;
+				color: #ccc;
 				-webkit-font-smoothing: antialiased;
 			}
 /* Entry Content, Entry Summary */
@@ -344,13 +348,14 @@ code{
 
 /* === #11 - LOOP NAV === */
 .loop-nav{
-	margin-bottom: 20px;
-	margin-bottom: 2rem;
+	margin: 20px;
+	margin: 2rem;
 	padding: 10px;
 	padding: 1rem;
 	border: 1px solid #ccc;
 	background: #fff;
 }
+.loop-nav:before,
 .loop-nav:after{
 	content:".";display:block;height:0;clear:both;visibility:hidden;
 }
@@ -654,51 +659,68 @@ code{
 
 
 /* === #13 - LOOP PAGINATION === */
-.loop-pagination{
-	margin: 0 20px 25px 0;
-	margin: 0 2rem 2.5rem 0;
+.page-navigation{
+	display: block;
+	background: #ccc;
 }
-.loop-pagination:before,
-.loop-pagination:after{
+.page-navigation:after{
 	content:".";display:block;height:0;clear:both;visibility:hidden;
 }
-	.loop-pagination .screen-reader-text{
-	}
-	.loop-pagination .page-numbers{
-		color: #444;
-		background: #fff;
-		border: 1px solid #ccc;
-		padding: 5px 10px;
-		padding: 0.5rem 1rem;
-	}
-	.loop-pagination a.page-numbers:hover,
-	.loop-pagination a.page-numbers:focus{
-		border: 1px solid #aaa;
-	}
-	.loop-pagination .page-numbers.current{
-		color: #ccc;
-		border: 1px solid #eee;
-	}
-	.loop-pagination .page-numbers.dots{
-		color: #ccc;
-		border: 1px solid #eee;
-	}
-	.loop-pagination .page-numbers.prev{
-	}
-	.loop-pagination .page-numbers.next{
-	}
-	.loop-pagination .page-numbers.prev:before{
-		content: "\f340";
-		font-family: "dashicons";
-		vertical-align: top;
-		-webkit-font-smoothing: antialiased;
-	}
-	.loop-pagination .page-numbers.next:after{
-		content: "\f344";
-		font-family: "dashicons";
-		vertical-align: top;
-		-webkit-font-smoothing: antialiased;
-	}
+.page-nav-item{
+	display: block;
+	width: 25%;
+	float: left;
+	color: #fff;
+	font-size: 20px;
+	font-size: 2rem;
+}
+.page-nav-1{
+
+}
+.page-nav-prev{
+
+}
+.page-nav-link > a,
+.page-nav-link > span{
+	display: block;
+	width: 100%;
+	padding: 10px;
+	padding: 1rem;
+	text-align: center;
+}
+.page-nav-link > a:hover,
+.page-nav-link > span:hover,
+.page-nav-link > a:focus,
+.page-nav-link > span:focus{
+	background: #bbb;
+}
+.previous-posts-link > a:before,
+.previous-posts-link > span:before{
+	content: "\f340";
+	font-family: "dashicons";
+	vertical-align: top;
+	-webkit-font-smoothing: antialiased;
+}
+.next-posts-link > a:before,
+.next-posts-link > span:before{
+	content: "\f344";
+	font-family: "dashicons";
+	vertical-align: top;
+	-webkit-font-smoothing: antialiased;
+}
+
+.page-nav-next{
+
+}
+.page-nav-comment{
+
+}
+.page-nav-info{
+
+}
+
+
+
 
 /* === #14 - WIDGETS === */
 .widget{

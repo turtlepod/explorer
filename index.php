@@ -16,17 +16,7 @@
 
 					<?php if ( have_posts() ){ /* Posts Found */ ?>
 
-						<?php if ( is_front_page() || is_singular() || is_404() ){ ?>
-
-							<header itemtype="http://schema.org/WebPageElement" itemscope="itemscope" class="loop-meta">
-								<h1 itemprop="headline" class="loop-title">Article title/Something</h1>
-							</header>
-
-						<?php } else { ?>
-
-							<?php tamatebako_archive_header(); ?>
-
-						<?php } ?>
+						<?php get_template_part( 'title-bar' ); ?>
 
 						<div class="content-entry-wrap">
 
@@ -42,7 +32,7 @@
 
 						</div><!-- .content-entry-wrap-->
 
-						<?php tamatebako_archive_footer(); ?>
+						<?php if( !is_singular() ) get_template_part( 'pagination' ); ?>
 
 					<?php } else { /* No Posts Found */ ?>
 
@@ -59,8 +49,6 @@
 		</div><!-- .main-inner -->
 
 	</div><!-- #main -->
-
-	<?php get_template_part( 'site-footer' ); ?>
 
 </div><!-- #container -->
 

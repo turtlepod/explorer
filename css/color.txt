@@ -1,0 +1,8 @@
+Color: #444
+
+Background: #f9f9f9
+Link: #21759B
+Link Hover + Focus: #444
+
+Border: #ccc
+

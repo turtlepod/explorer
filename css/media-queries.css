@@ -1,0 +1,67 @@
+/**
+ * Media Queries CSS
+******************************************/
+
+ /* Make Responsive */
+#container{
+	max-width: 100%;
+}
+ 
+/* === #00 - VIEWPORT FIX === 
+ * Does the same thing as <meta name="viewport" content="width=device-width">
+ * for Windows 8 "Snapped" views in IE10+
+ * @link http://core.trac.wordpress.org/ticket/25888
+ * @link http://blog.teamtreehouse.com/thinking-ahead-css-device-adaptation-with-viewport
+ */
+@-ms-viewport {
+	width: device-width;
+}
+@viewport {
+	width: device-width;
+}
+
+
+/* === #01 - LAYOUTS === */
+
+/* Push primary sidebar to bottom */
+@media screen and (max-width: 1000px){
+
+}
+
+/* Push secondary sidebar to bottom */
+@media screen and (max-width: 700px){
+
+}
+
+
+/* === #02 - MENU ===  */
+@media screen and (max-width: 700px){
+
+}
+
+
+/* === #03 - ENTRY === */
+@media screen and (max-width: 450px) {
+
+}
+
+
+/* === #04 - LOOP-NAV === */
+@media screen and (max-width: 700px) {
+
+}
+
+
+/* === #05 - COMMENTS === */
+@media screen and (max-width: 700px) {
+	#respond .comment-form-author,
+	#respond .comment-form-email,
+	#respond .comment-form-url{
+		width: 100%;
+		margin-right: 0;
+		float: none;
+	}
+	#respond #submit{
+		float: none;
+	}
+}

@@ -38,14 +38,6 @@
 
 		</div><!-- .page-nav-2 -->
 
-		<div class="page-nav-item page-nav-3 page-nav-comment">
-			
-		</div><!-- .page-nav-3 -->
-
-		<div class="page-nav-item page-nav-4 page-nav-info">
-			
-		</div><!-- .page-nav-4 -->
-
 	</div><!-- .page-navigation -->
 
 <?php } // end pagination ?>

@@ -44,10 +44,6 @@
 			</div>
 		</div><!-- .page-nav-3 -->
 
-		<div class="page-nav-item page-nav-4 page-nav-info">
-			
-		</div><!-- .page-nav-4 -->
-
 	</div><!-- .page-navigation -->
 
 <?php } // end pagination ?>

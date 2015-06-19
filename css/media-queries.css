@@ -25,11 +25,17 @@
 	#header{
 		position: fixed;
 		top: 0;
+		background: #000;
+	}
+	body.wordpress{
+		background: #fff !important;
+	}
+	#container{
 	}
 	#main{
 		margin: 0;
-		margin-top: 48px;
-		margin-bottom: 45px;
+		padding-top: 47px;
+		padding-bottom: 45px;
 		width: 100%;
 	}
 	.page-navigation{
@@ -39,8 +45,30 @@
 	#comments{
 		padding-top: 70px;
 	}
-
+	.plural .content-entry-wrap .entry:last-child .entry-wrap{
+		border-bottom: 1px solid #ccc;
+	}
 }
+
+@media screen and (max-width: 600px){
+	.entry-title-wrap{
+		width:100%;
+	}
+	.entry-byline{
+		padding-left: 60px;
+		padding-left: 6rem;
+	}
+	.entry-byline .comments-link{
+		display: inline;
+	}
+	.entry-byline .comments-link:empty{
+		display: none;
+	}
+	body.plural .entry-byline .entry-published:before{
+		display: none;
+	}
+}
+
 /* === #01 - LAYOUTS === */
 
 /* Push primary sidebar to bottom */

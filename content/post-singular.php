@@ -31,8 +31,8 @@
 
 	</div><!-- .entry-wrap -->
 
+	<?php get_template_part( 'pagination-singular' ); ?>
+
 </article><!-- .entry -->
-<?php get_template_part( 'pagination-singular' ); ?>
-<?php //tamatebako_entry_nav(); ?>
 
 <?php comments_template( '', true ); // Load comments. ?>

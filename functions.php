@@ -18,6 +18,20 @@ add_action( 'after_setup_theme', 'daftar_setup' );
  */
 function daftar_setup(){
 
+	/* === Post Formats === */
+	$post_formats_args = array(
+		'aside',
+		'image',
+		'gallery',
+		'link',
+		'quote',
+		'status',
+		'video',
+		'audio',
+		'chat'
+	);
+	add_theme_support( 'post-formats', $post_formats_args );
+
 	/* === Register Sidebars === */
 	$sidebars_args = array(
 		"primary" => array( "name" => _x( 'Sidebar', 'sidebar name', 'daftar' ), "description" => "" ),
@@ -50,7 +64,7 @@ function daftar_setup(){
 	add_theme_support( 'tamatebako-customize-mobile-view' );
 
 	/* === Custom Background === */
-	///add_theme_support( 'custom-background', array( 'default-color' => 'f9f9f9' ) );
+	add_theme_support( 'custom-background', array( 'default-color' => 'f9f9f9' ) );
 
 	/* === Set Content Width === */
 	hybrid_set_content_width( 1200 );

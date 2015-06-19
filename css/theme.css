@@ -86,6 +86,9 @@ code{
 	padding: 10px 20px;
 	padding: 1rem 2rem;
 	margin-bottom: 0;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	z-index: 100;
 }
 #header:after{
 	content:".";display:block;height:0;clear:both;visibility:hidden;
@@ -714,6 +717,8 @@ body.singular .content-entry-wrap > .entry{
 .page-navigation{
 	display: block;
 	background: #ccc;
+	width: 100%;
+	z-index: 100;
 }
 .page-navigation:after{
 	content:".";display:block;height:0;clear:both;visibility:hidden;
@@ -939,11 +944,7 @@ body.sidebar-toggle-active #sidebar-primary{
 	text-align: center;
 }
 .widget_search .search-submit{
-	width: 100%;
-	margin-bottom: 0;
-	border: none;
-	color: #fff;
-	background: #444;
+	display: none;
 }
 .widget_search .search-submit:hover,
 .widget_search .search-submit:focus{

@@ -14,7 +14,7 @@ elseif( is_singular() ){
 	$title = get_post_type_labels( get_post_type_object( get_post_type( get_queried_object_id() ) ) )->singular_name;
 }
 if( is_front_page() && is_home() ){
-	$title = __( 'Documents', 'daftar' );
+	$title = __( 'Blog', 'daftar' );
 }
 ?>
 

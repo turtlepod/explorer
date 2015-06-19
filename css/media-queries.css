@@ -19,8 +19,28 @@
 @viewport {
 	width: device-width;
 }
+/* === BASE MEDIA QUERIES === */
+@media screen and (max-width: 700px){
 
+	#header{
+		position: fixed;
+		top: 0;
+	}
+	#main{
+		margin: 0;
+		margin-top: 48px;
+		margin-bottom: 45px;
+		width: 100%;
+	}
+	.page-navigation{
+		position: fixed;
+		bottom: 0;
+	}
+	#comments{
+		padding-top: 70px;
+	}
 
+}
 /* === #01 - LAYOUTS === */
 
 /* Push primary sidebar to bottom */

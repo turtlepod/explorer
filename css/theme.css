@@ -913,6 +913,7 @@ body.singular .page-nav-comment{
 	transition: all 0.4s ease-in-out 0s;
 }
 #sidebar-primary{
+	background: #444;
 	position: fixed;
 	overflow-y: scroll;
 	overflow-x: hidden;

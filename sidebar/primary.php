@@ -1,9 +1,3 @@
-<?php
-if ( strpos( get_theme_mod( 'theme_layout' ),'sidebar1' ) === false) {
-	return false;
-}
-?>
-
 <div id="sidebar-primary-wrap">
 
 	<aside <?php hybrid_attr( 'sidebar', 'primary' ); ?>>
@@ -16,8 +10,8 @@ if ( strpos( get_theme_mod( 'theme_layout' ),'sidebar1' ) === false) {
 
 			<?php the_widget( 'WP_Widget_Text',
 				array(
-					'title' => 'Site Name',
-					'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a tortor quam. Vestibulum aliquet, diam eget dignissim vehicula, sapien sapien tempor velit, a ultrices tellus turpis nec nunc. Duis porta dapibus ligula vel semper.',
+					'title' => get_bloginfo( 'name' ),
+					'text' => get_bloginfo( 'description' )
 				),
 				array(
 					'before_widget' => '<section class="widget widget_recent_entries">',

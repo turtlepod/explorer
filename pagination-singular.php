@@ -39,7 +39,9 @@
 		</div><!-- .page-nav-2 -->
 
 		<div class="page-nav-item page-nav-3 page-nav-comment">
-			
+			<div class="page-nav-comments-link page-nav-link">
+				<?php comments_popup_link( number_format_i18n( 0 ), number_format_i18n( 1 ), '%', 'comments-link', '' ); ?>
+			</div>
 		</div><!-- .page-nav-3 -->
 
 		<div class="page-nav-item page-nav-4 page-nav-info">

@@ -42,8 +42,6 @@
 
 				</main><!-- #content -->
 
-				<?php //hybrid_get_sidebar( 'primary' ); ?>
-
 			</div><!-- .main-wrap -->
 
 		</div><!-- .main-inner -->
@@ -51,5 +49,7 @@
 	</div><!-- #main -->
 
 </div><!-- #container -->
+
+<?php hybrid_get_sidebar( 'primary' ); ?>
 
 <?php get_footer(); // Loads the footer.php template. ?>

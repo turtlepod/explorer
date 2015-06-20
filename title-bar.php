@@ -24,7 +24,7 @@ elseif( is_front_page() && is_home() ){
 }
 elseif( is_singular() ){
 	$title = explorer_get_post_type_name( get_queried_object_id() );
-	if( is_page() ){ ?>
+	if( is_page() || is_attachment() ){ ?>
 		<header itemtype="http://schema.org/WebPageElement" itemscope="itemscope" class="loop-meta">
 			<?php the_title( '<h1 itemprop="headline" class="loop-title">', '</h1>' ); ?>
 		</header>

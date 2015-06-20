@@ -134,6 +134,15 @@ code{
 	body.singular-page .loop-title:before{
 		content: "\f105";
 	}
+	body.attachment-image .loop-title:before{
+		content: "\f128";
+	}
+	body.attachment-audio .loop-title:before{
+		content: "\f127";
+	}
+	body.attachment-video .loop-title:before{
+		content: "\f126";
+	}
 	body.taxonomy-category .loop-title:before{
 		content: "\f318";
 	}

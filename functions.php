@@ -67,7 +67,7 @@ function explorer_setup(){
 	add_theme_support( 'custom-background', array( 'default-color' => 'f1f1f1' ) );
 
 	/* === Set Content Width === */
-	hybrid_set_content_width( 1200 );
+	hybrid_set_content_width( 610 );
 
 }
 

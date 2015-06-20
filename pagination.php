@@ -14,7 +14,7 @@
 
 			<?php if( get_previous_posts_link() ){ ?>
 				<div class="previous-posts-link page-nav-link">
-					<?php previous_posts_link( '<span class="screen-reader-text">' . __( 'Previous', 'daftar' ) . '</span>' ); ?>
+					<?php previous_posts_link( '<span class="screen-reader-text">' . __( 'Previous', 'explorer' ) . '</span>' ); ?>
 				</div>
 			<?php } else { ?>
 				<div class="previous-posts-link page-nav-link">
@@ -28,7 +28,7 @@
 
 			<?php if( get_next_posts_link() ){ ?>
 				<div class="next-posts-link page-nav-link">
-				<?php next_posts_link( '<span class="screen-reader-text">' . __( 'Next', 'daftar' ) . '</span>' ); ?>
+				<?php next_posts_link( '<span class="screen-reader-text">' . __( 'Next', 'explorer' ) . '</span>' ); ?>
 				</div>
 			<?php } else { ?>
 				<div class="next-posts-link page-nav-link">

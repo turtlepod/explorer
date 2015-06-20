@@ -10,13 +10,13 @@ require_once( trailingslashit( get_template_directory() ) . 'includes/string.php
 require_once( trailingslashit( get_template_directory() ) . 'includes/tamatebako.php' );
 
 /* Load theme general setup */
-add_action( 'after_setup_theme', 'daftar_setup' );
+add_action( 'after_setup_theme', 'explorer_setup' );
 
 /**
  * General Setup
  * @since 0.1.0
  */
-function daftar_setup(){
+function explorer_setup(){
 
 	/* === Post Formats === */
 	$post_formats_args = array(
@@ -34,7 +34,7 @@ function daftar_setup(){
 
 	/* === Register Sidebars === */
 	$sidebars_args = array(
-		"primary" => array( "name" => _x( 'Sidebar', 'sidebar name', 'daftar' ), "description" => "" ),
+		"primary" => array( "name" => _x( 'Sidebar', 'sidebar name', 'explorer' ), "description" => "" ),
 	);
 	add_theme_support( 'tamatebako-sidebars', $sidebars_args );
 
@@ -71,4 +71,4 @@ function daftar_setup(){
 
 }
 
-do_action( 'daftar_after_setup_theme' );
+do_action( 'explorer_after_setup_theme' );

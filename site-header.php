@@ -7,7 +7,7 @@
 		</div><!-- #branding -->
 
 		<div id="sidebar-toggle">
-			<a href="#"><span class="screen-reader-text"><?php _e( 'Sidebar Toggle', 'daftar' );?></span></a>
+			<a href="#"><span class="screen-reader-text"><?php _e( 'Sidebar Toggle', 'explorer' );?></span></a>
 		</div><!-- #sidebar-toggle-->
 
 </header><!-- #header-->

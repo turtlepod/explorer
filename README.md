@@ -1,13 +1,13 @@
-# Daftar WordPress Theme
+# Explorer WordPress Theme
 
 ## About
 
 **Author:** David Chandra Purnama <br/>
 ( [@turtlepod](http://twitter.com/turtlepod) / [shellcreeper.com](http://shellcreeper.com/) )
 
-Daftar theme is a very cool theme created for **48 Hours WordPress Theme Challenge**.
+Daftar theme is a very cool theme inspired by file explorer. created for **48 Hours WordPress Theme Challenge**.
 
-More info: [Theme Page](http://genbutheme.com/themes/daftar/)
+More info: [Theme Page](http://genbutheme.com/themes/explorer/)
 
 ## Copyright & License
 

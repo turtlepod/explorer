@@ -220,69 +220,30 @@ body.singular .content-entry-wrap .entry-wrap{
 		/* Post Format */
 		.entry.format-aside .entry-title-wrap:before{
 			content: "\f123";
-			color: #fff600;
-			text-shadow:
-				-1px -1px 0 #2B2B2B,
-				1px -1px 0 #2B2B2B,
-				-1px 1px 0 #2B2B2B,
-				1px 1px 0 #2B2B2B;
 		}
 		.entry.format-image .entry-title-wrap:before{
 			content: "\f128";
-			color: #56ad00;
 		}
 		.entry.format-gallery .entry-title-wrap:before{
 			content: "\f161";
-			color: #4b9302;
 		}
 		.entry.format-link .entry-title-wrap:before{
 			content: "\f103";
-			color: #a0a0a0;
-			text-shadow:
-				-1px -1px 0 #2B2B2B,
-				1px -1px 0 #2B2B2B,
-				-1px 1px 0 #2B2B2B,
-				1px 1px 0 #2B2B2B;
 		}
 		.entry.format-quote .entry-title-wrap:before{
 			content: "\f122";
-			color: #ff0000;
-			text-shadow:
-				-1px -1px 0 #2B2B2B,
-				1px -1px 0 #2B2B2B,
-				-1px 1px 0 #2B2B2B,
-				1px 1px 0 #2B2B2B;
 		}
 		.entry.format-status .entry-title-wrap:before{
 			content: "\f130";
-			color: #ce3da5;
-			text-shadow:
-				-1px -1px 0 #2B2B2B,
-				1px -1px 0 #2B2B2B,
-				-1px 1px 0 #2B2B2B,
-				1px 1px 0 #2B2B2B;
 		}
 		.entry.format-video .entry-title-wrap:before{
 			content: "\f126";
-			color: #af2a2c;
 		}
 		.entry.format-audio .entry-title-wrap:before{
 			content: "\f127";
-			color: #f4f430;
-			text-shadow:
-				-1px -1px 0 #2B2B2B,
-				1px -1px 0 #2B2B2B,
-				-1px 1px 0 #2B2B2B,
-				1px 1px 0 #2B2B2B;
 		}
 		.entry.format-chat .entry-title-wrap:before{
 			content: "\f125";
-			color: #3d81ce;
-			text-shadow:
-				-1px -1px 0 #2B2B2B,
-				1px -1px 0 #2B2B2B,
-				-1px 1px 0 #2B2B2B,
-				1px 1px 0 #2B2B2B;
 		}
 		/* Protected: Key */
 		.entry.protected .entry-title-wrap:before{
@@ -297,7 +258,7 @@ body.singular .content-entry-wrap .entry-wrap{
 		/* Sticky */
 		.entry.sticky .entry-title-wrap:before{
 			content: "\f109";
-			color: #fffa00;
+			color: #e50000;
 			text-shadow:
 				-1px -1px 0 #2B2B2B,
 				1px -1px 0 #2B2B2B,
@@ -602,7 +563,7 @@ body.singular .content-entry-wrap .entry-wrap{
 				padding: 1rem;
 				margin-bottom: 10px;
 				margin-bottom: 1rem;
-				background: #fff;
+				background: #fafafa;
 			}
 			.comment-wrap:after{
 				content:".";display:block;height:0;clear:both;visibility:hidden;
@@ -664,6 +625,7 @@ body.singular .content-entry-wrap .entry-wrap{
 			padding: 10px;
 			padding: 1rem;
 			border: 1px solid #ccc;
+			background: #fafafa;
 		}
 			.pingback .comment-meta{
 				border: none;
@@ -674,7 +636,6 @@ body.singular .content-entry-wrap .entry-wrap{
 					font-weight: 400;
 				}
 					.pingback .comment-author a{
-						color: #444;
 					}
 					.pingback .comment-author a:hover,
 					.pingback .comment-author a:focus{
@@ -694,7 +655,7 @@ body.singular .content-entry-wrap .entry-wrap{
 		padding: 10px;
 		padding: 1rem;
 		border: 1px solid #ccc;
-		background: #fff;
+		background: #fafafa;
 	}
 	#respond:after{
 		content:".";display:block;height:0;clear:both;visibility:hidden;

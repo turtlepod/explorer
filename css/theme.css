@@ -307,6 +307,16 @@ body.singular .content-entry-wrap .entry-wrap{
 				-1px 1px 0 #2B2B2B,
 				1px 1px 0 #2B2B2B;
 		}
+		/* Sticky */
+		.entry.sticky .entry-title-wrap:before{
+			content: "\f109";
+			color: #fffa00;
+			text-shadow:
+				-1px -1px 0 #2B2B2B,
+				1px -1px 0 #2B2B2B,
+				-1px 1px 0 #2B2B2B,
+				1px 1px 0 #2B2B2B;
+		}
 		.entry-title-wrap{
 			width:65%;
 			padding-left: 60px;

@@ -71,4 +71,4 @@ function explorer_setup(){
 
 }
 
-do_action( 'explorer_after_setup_theme' );
+//do_action( 'explorer_after_setup_theme' );

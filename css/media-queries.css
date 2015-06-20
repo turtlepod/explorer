@@ -74,11 +74,22 @@
 		position: fixed;
 		top: 46px;
 	}
+	body.admin-bar #sidebar-primary{
+		padding-top: 46px;
+	}
 }
 @media screen and (max-width: 600px) {
 	body.admin-bar #header{
 		position: absolute;
 		top: 46px;
+	}
+	body.admin-bar #sidebar-primary{
+		padding-top: 46px;
+	}
+	body.admin-bar.sidebar-toggle-active{
+		overflow: hidden;
+		position: fixed;
+		top: 0;
 	}
 }
 

@@ -914,10 +914,13 @@ body.singular .page-nav-comment{
 	bottom: 0;
 	right: 0;
 	width: 336px;
-	max-width: 100%;
+	max-width: 90%;
 	margin-right: -336px;
 	transition: all 0.4s ease-in-out 0s;
 	z-index: 99999;
+}
+body.admin-bar #sidebar-primary{
+	padding-top: 32px;
 }
 /* turn off the lights! */
 body.sidebar-toggle-active #sidebar-primary-wrap {

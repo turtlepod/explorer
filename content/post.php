@@ -6,7 +6,7 @@
 
 			<?php the_title( '<h2 ' . hybrid_get_attr( 'entry-title' ) . '><a href="' . get_permalink() . '" rel="bookmark" itemprop="url">', '</a></h2>' ); ?>
 
-			<div class="entry-type"><?php _e( 'Type:', 'explorer' ); ?> <?php echo get_post_type_labels( get_post_type_object( get_post_type( get_the_ID() ) ) )->singular_name;?></div>
+			<div class="entry-type"><?php _e( 'Type:', 'explorer' ); ?> <?php echo explorer_get_post_type_name( get_the_ID() ); ?></div>
 
 		</div><!-- .entry-title-wrap -->
 

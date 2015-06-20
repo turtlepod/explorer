@@ -131,6 +131,9 @@ code{
 		color: #fff;
 		-webkit-font-smoothing: antialiased;
 	}
+	body.singular-page .loop-title:before{
+		content: "\f105";
+	}
 	body.taxonomy-category .loop-title:before{
 		content: "\f318";
 	}

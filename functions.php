@@ -71,4 +71,22 @@ function explorer_setup(){
 
 }
 
-//do_action( 'explorer_after_setup_theme' );
+/**
+ * Get Post Type Name
+ * @since 0.1.0
+ * 
+ */
+function explorer_get_post_type_name( $id = '' ){
+	if( !$id ){ $id = get_the_ID(); }
+	$name = '';
+	$cpt = get_post_type_object( get_post_type( $id ) );
+	if( isset( $cpt->labels->name ) ){
+		$name = $cpt->labels->name;
+	}
+	return $name;
+}
+
+
+
+
+do_action( 'explorer_after_setup_theme' );

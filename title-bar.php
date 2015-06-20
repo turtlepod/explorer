@@ -23,12 +23,16 @@ elseif( is_front_page() && is_home() ){
 	<?php
 }
 elseif( is_singular() ){
-	$title = get_post_type_labels( get_post_type_object( get_post_type( get_queried_object_id() ) ) )->singular_name;
-	?>
-	<div class="loop-meta">
-		<div class="loop-title"><?php echo $title; ?></div>
-	</div>
-	<?php
+	$title = explorer_get_post_type_name( get_queried_object_id() );
+	if( is_page() ){ ?>
+		<header itemtype="http://schema.org/WebPageElement" itemscope="itemscope" class="loop-meta">
+			<?php the_title( '<h1 itemprop="headline" class="loop-title">', '</h1>' ); ?>
+		</header>
+	<?php } else { ?>
+		<div class="loop-meta">
+			<div class="loop-title"><?php echo $title; ?></div>
+		</div>
+	<?php }
 }
 else{
 	$title = get_bloginfo( 'name' );

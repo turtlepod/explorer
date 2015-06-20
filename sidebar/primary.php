@@ -10,11 +10,31 @@
 
 			<?php the_widget( 'WP_Widget_Text',
 				array(
-					'title' => get_bloginfo( 'name' ),
+					'title' => __( 'About', 'explorer' ),
 					'text' => get_bloginfo( 'description' )
 				),
 				array(
-					'before_widget' => '<section class="widget widget_recent_entries">',
+					'before_widget' => '<section class="widget widget_text">',
+					'after_widget'  => '</section>',
+					'before_title'  => '<h3 class="widget-title">',
+					'after_title'   => '</h3>'
+				)
+			); ?>
+			<?php the_widget( 'WP_Widget_Pages',
+				array(
+					'title' => __( 'Navigation', 'explorer' ),
+				),
+				array(
+					'before_widget' => '<section class="widget widget_pages">',
+					'after_widget'  => '</section>',
+					'before_title'  => '<h3 class="widget-title">',
+					'after_title'   => '</h3>'
+				)
+			); ?>
+			<?php the_widget( 'WP_Widget_Search',
+				array(),
+				array(
+					'before_widget' => '<section class="widget widget_search">',
 					'after_widget'  => '</section>',
 					'before_title'  => '<h3 class="widget-title">',
 					'after_title'   => '</h3>'

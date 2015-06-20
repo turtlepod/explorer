@@ -4,11 +4,11 @@ body{
 	background: #fff;
 }
 a{
-	color: #21759B;
+	color: #0073aa;
 }
 a:hover,
 a:focus {
-	color: #444;
+	color: #00a0d2;
 }
 ul{
 	list-style: circle;
@@ -37,4 +37,8 @@ pre{
 }
 code{
 	background: #eee;
+}
+/* Caption */
+.html5-captions .wp-caption, .wp-caption{
+	background: #fafafa;
 }

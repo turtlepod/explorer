@@ -1060,19 +1060,23 @@ body.sidebar-toggle-active #sidebar-primary{
 	border: none;
 }
 /* Widget Nav Menu */
+.widget_pages,
 .widget_nav_menu{
 	padding-bottom: 0;
 }
+.widget_pages ul,
+.widget_nav_menu ul{
+	list-style: none;
+	margin-left: 0;
+}
+.widget_pages > ul,
 .widget_nav_menu > div > ul.menu{
 	margin-left: -20px;
 	margin-top: -20px;
 	margin-right: -20px;
 	margin-bottom: 0;
 }
-.widget_nav_menu ul{
-	list-style: none;
-	margin-left: 0;
-}
+.widget_pages ul li a,
 .widget_nav_menu ul li a{
 	padding: 10px 20px;
 	padding: 1rem 2rem;
@@ -1080,6 +1084,7 @@ body.sidebar-toggle-active #sidebar-primary{
 	display: block;
 	background: rgba(0,0,0,0.2);
 }
+.widget_pages ul li a:before,
 .widget_nav_menu ul li a:before{
 	content: "\f345";
 	font-family: "dashicons";
@@ -1089,21 +1094,27 @@ body.sidebar-toggle-active #sidebar-primary{
 	color: #ccc;
 	-webkit-font-smoothing: antialiased;
 }
+.widget_pages ul ul a,
 .widget_nav_menu ul ul a{
 	padding-left: 40px;
 }
+.widget_pages ul ul ul a,
 .widget_nav_menu ul ul ul a{
 	padding-left: 60px;
 }
+.widget_pages ul ul ul ul a,
 .widget_nav_menu ul ul ul ul a{
 	padding-left: 80px;
 }
+.widget_pages ul ul ul ul ul a,
 .widget_nav_menu ul ul ul ul ul a{
 	padding-left: 100px;
 }
+.widget_pages ul ul ul ul ul ul a,
 .widget_nav_menu ul ul ul ul ul ul a{
 	padding-left: 120px;
 }
+.widget_pages ul ul ul ul ul ul ul a,
 .widget_nav_menu ul ul ul ul ul ul ul a{
 	padding-left: 140px;
 }

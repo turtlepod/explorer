@@ -45,7 +45,7 @@ function explorer_setup(){
 		'theme-reset',
 		'theme',
 		'media-queries',
-		'debug-media-queries'
+		//'debug-media-queries'
 	);
 	if ( is_child_theme() ){
 		$style_args[] = 'style';

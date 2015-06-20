@@ -49,7 +49,7 @@
 		border-bottom: 1px solid #ccc;
 	}
 }
-
+/* === BYLINE === */
 @media screen and (max-width: 600px){
 	.entry-title-wrap{
 		width:100%;
@@ -68,39 +68,21 @@
 		display: none;
 	}
 }
-
-/* === #01 - LAYOUTS === */
-
-/* Push primary sidebar to bottom */
-@media screen and (max-width: 1000px){
-
+/* === ADMIN BAR FIX === */
+@media screen and ( max-width: 782px ) {
+	body.admin-bar #header{
+		position: fixed;
+		top: 46px;
+	}
+}
+@media screen and (max-width: 600px) {
+	body.admin-bar #header{
+		position: absolute;
+		top: 46px;
+	}
 }
 
-/* Push secondary sidebar to bottom */
-@media screen and (max-width: 700px){
-
-}
-
-
-/* === #02 - MENU ===  */
-@media screen and (max-width: 700px){
-
-}
-
-
-/* === #03 - ENTRY === */
-@media screen and (max-width: 450px) {
-
-}
-
-
-/* === #04 - LOOP-NAV === */
-@media screen and (max-width: 700px) {
-
-}
-
-
-/* === #05 - COMMENTS === */
+/* === COMMENTS === */
 @media screen and (max-width: 700px) {
 	#respond .comment-form-author,
 	#respond .comment-form-email,

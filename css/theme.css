@@ -1,29 +1,4 @@
-/*****************************************
- *
- * TABLE OF CONTENTS:
- * 
- * #01 - RESET
- * #02 - ELEMENTS
- * #03 - IMAGES & MEDIA
- * #04 - CONTAINER
- * #05 - HEADER
- * #06 - MENUS
- * #07 - MAIN
- * #08 - CONTENT
- * #09 - LOOP META
- * #10 - ENTRY
- * #11 - LOOP NAV
- * #12 - COMMENTS
- * #13 - LOOP PAGINATION
- * #14 - WIDGETS
- * #15 - FOOTER
- * 
- *****************************************/
-
-/* === #01 - RESET === */
-
-
-/* === #02 - ELEMENTS === */
+/* === ELEMENTS === */
 body{
 	font-size: 14px;
 	font-size: 1.4rem;
@@ -68,10 +43,10 @@ code{
 	background: #eee;
 }
 
-/* === #03 - IMAGES & MEDIA === */
+/* === IMAGES & MEDIA === */
 
 
-/* === #04 - CONTAINER === */
+/* === CONTAINER === */
 #container{
 	background: transparent;
 	width: 100%;
@@ -80,7 +55,7 @@ code{
 	padding: 0;
 }
 
-/* === #05 - HEADER === */
+/* === HEADER === */
 #header{
 	background: rgba( 0,0,0,0.7 );
 	padding: 10px 20px;
@@ -117,7 +92,7 @@ code{
 			}
 
 
-/* === #07 - MAIN === */
+/* === MAIN === */
 #main{
 	margin: 50px auto;
 	width: 650px;
@@ -130,12 +105,12 @@ code{
 		content:".";display:block;height:0;clear:both;visibility:hidden;
 	}
 
-/* === #08 - CONTENT === */
+/* === CONTENT === */
 #content{
 	width: 100%;
 }
 
-/* === #09 - LOOP META === */
+/* === LOOP META === */
 .loop-meta{
 	background: #0073aa;
 	color: #fff;
@@ -166,7 +141,7 @@ code{
 		content: "\f179";
 	}
 
-/* === #10 - ENTRY === */
+/* === ENTRY === */
 .entry{
 }
 .entry:after{
@@ -496,7 +471,7 @@ body.singular .content-entry-wrap .entry-wrap{
 }
 
 
-/* === #11 - LOOP NAV === */
+/* === LOOP NAV === */
 .loop-nav{
 	margin: 20px;
 	margin: 2rem;
@@ -546,7 +521,7 @@ body.singular .content-entry-wrap .entry-wrap{
 			right: 0;
 		}
 
-/* === #12 - COMMENTS === */
+/* === COMMENTS === */
 #comments-template{
 	padding: 20px;
 	padding: 2rem;
@@ -806,7 +781,7 @@ body.singular .content-entry-wrap .entry-wrap{
 }
 
 
-/* === #13 - LOOP PAGINATION === */
+/* === LOOP PAGINATION === */
 .page-navigation{
 	display: block;
 	background: #191e23;
@@ -1124,7 +1099,7 @@ body.sidebar-toggle-active #sidebar-primary{
 	padding-left: 140px;
 }
 
-/* === #15 - FOOTER === */
+/* === FOOTER === */
 #footer{
 	padding: 20px;
 	padding: 2rem;

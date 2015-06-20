@@ -5,7 +5,7 @@
 **Author:** David Chandra Purnama <br/>
 ( [@turtlepod](http://twitter.com/turtlepod) / [shellcreeper.com](http://shellcreeper.com/) )
 
-Daftar theme is a very cool theme inspired by file explorer. created for **48 Hours WordPress Theme Challenge**.
+Explorer theme is a very cool theme inspired by file explorer. created for **48 Hours WordPress Theme Challenge**.
 
 More info: [Theme Page](http://genbutheme.com/themes/explorer/)
 

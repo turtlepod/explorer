@@ -30,7 +30,7 @@ global $post;
 		<div class="page-nav-item page-nav-2 page-nav-home">
 
 			<div class="home-link page-nav-link">
-				<a rel="home" href="<?php echo esc_url( home_url() ); ?>"><span class="screen-reader-text"><?php _e( 'Back to Home', 'explorer' ); ?></span></a>
+				<a rel="home" href="<?php echo esc_url( home_url() ); ?>"><span class="screen-reader-text"><?php echo explorer_string( 'back_to_home' ); ?></span></a>
 			</div>
 
 		</div><!-- .page-nav-2 -->

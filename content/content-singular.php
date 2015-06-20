@@ -1,3 +1,9 @@
+<?php
+/**
+ * Default Content Template for Post Type Entry in Singular Pages
+ * @since 1.0.0
+ */
+?>
 <article <?php hybrid_attr( 'post' ); ?>>
 
 	<div class="entry-wrap">

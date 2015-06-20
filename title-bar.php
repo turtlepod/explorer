@@ -15,7 +15,7 @@ if ( hybrid_get_loop_title() ){
 	<?php
 }
 elseif( is_front_page() && is_home() ){
-	$title = __( 'Blog', 'explorer' );
+	$title = explorer_string( 'blog' );
 	?>
 	<div class="loop-meta">
 		<div class="loop-title"><?php echo $title; ?></div>

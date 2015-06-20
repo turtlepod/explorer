@@ -30,7 +30,7 @@ global $post;
 		<div class="page-nav-item page-nav-2 page-nav-download">
 
 			<div class="download-file-link page-nav-link">
-				<a href="<?php echo esc_url( wp_get_attachment_url( get_the_ID() ) ); ?>"><span class="screen-reader-text"><?php _e( 'Back to Home', 'explorer' ); ?></span></a>
+				<a href="<?php echo esc_url( wp_get_attachment_url( get_the_ID() ) ); ?>"><span class="screen-reader-text"><?php echo explorer_string( 'back_to_home' ); ?></span></a>
 			</div>
 
 		</div><!-- .page-nav-2 -->

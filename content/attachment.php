@@ -1,3 +1,9 @@
+<?php
+/**
+ * Attachment Content
+ * @since 1.0.0
+ */
+?>
 <article <?php hybrid_attr( 'post' ); ?>>
 
 	<div class="entry-wrap">

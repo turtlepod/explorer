@@ -1,3 +1,9 @@
+<?php
+/**
+ * Single Comment Template
+ * @since 1.0.0
+ */
+?>
 <li <?php hybrid_attr( 'comment' ); ?>>
 
 	<div class="comment-wrap">

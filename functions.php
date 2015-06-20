@@ -34,13 +34,16 @@ function explorer_setup(){
 
 	/* === Register Sidebars === */
 	$sidebars_args = array(
-		"primary" => array( "name" => _x( 'Sidebar', 'sidebar name', 'explorer' ), "description" => "" ),
+		"primary" => array(
+			"name" => explorer_string( 'sidebar_primary_name' ),
+			"description" => ""
+		),
 	);
 	add_theme_support( 'tamatebako-sidebars', $sidebars_args );
 
 	/* === Register Menus === */
 	$menus_args = array(
-		"home" => _x( 'Home Navigation', 'nav menu', 'explorer' ),
+		"home" => explorer_string( 'home_nav_name' ),
 	);
 	add_theme_support( 'tamatebako-menus', $menus_args );
 
@@ -48,12 +51,15 @@ function explorer_setup(){
 	$style_args = array(
 		'theme-open-sans-font',
 		'dashicons',
-		'theme-reset',
-		'theme',
-		'media-queries',
+		'style'
+		//'theme-reset',
+		//'theme',
+		//'media-queries',
 		//'debug-media-queries'
 	);
 	if ( is_child_theme() ){
+		$style_args = array();
+		$style_args[] = 'parent';
 		$style_args[] = 'style';
 	}
 	add_theme_support( 'hybrid-core-styles', $style_args );
@@ -72,7 +78,7 @@ function explorer_setup(){
 	/* === Custom Background === */
 	$custom_bg_args = array(
 		'default-color'          => 'f1f1f1',
-		'default-image'          => get_template_directory_uri() . '/css/images/background.jpg',
+		'default-image'          => get_template_directory_uri() . '/images/background.jpg',
 		'default-repeat'         => 'no-repeat',
 		'default-position-x'     => 'center',
 		'default-attachment'     => 'fixed',
@@ -124,7 +130,7 @@ function explorer_customizer_register( $wp_customize ){
     $wp_customize->add_control( 'explorer_full_size_background', array(
     	'settings'            => 'full_size_background',
 		'section'             => 'background_image',
-		'label'               => __( 'Full Size Background', 'explorer' ),
+		'label'               => explorer_string( 'full_size_background' ),
 		'type'                => 'checkbox',
 		'priority'            => 20,
 	));

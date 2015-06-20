@@ -1,3 +1,9 @@
+<?php
+/**
+ * Default Content Template for Post Type Entry in Archive Pages
+ * @since 1.0.0
+ */
+?>
 <article <?php hybrid_attr( 'post' ); ?>>
 
 	<div class="entry-wrap">
@@ -6,7 +12,7 @@
 
 			<?php the_title( '<h2 ' . hybrid_get_attr( 'entry-title' ) . '><a href="' . get_permalink() . '" rel="bookmark" itemprop="url">', '</a></h2>' ); ?>
 
-			<div class="entry-type"><?php _e( 'Type:', 'explorer' ); ?> <?php echo explorer_get_post_type_name( get_the_ID() ); ?></div>
+			<div class="entry-type"><?php echo explorer_string( 'entry_type' ); ?> <?php echo explorer_get_post_type_name( get_the_ID() ); ?></div>
 
 		</div><!-- .entry-title-wrap -->
 

@@ -10,7 +10,7 @@
 
 			<?php the_widget( 'WP_Widget_Text',
 				array(
-					'title' => __( 'About', 'explorer' ),
+					'title' => explorer_string( 'about' ),
 					'text' => get_bloginfo( 'description' )
 				),
 				array(
@@ -22,7 +22,7 @@
 			); ?>
 			<?php the_widget( 'WP_Widget_Pages',
 				array(
-					'title' => __( 'Navigation', 'explorer' ),
+					'title' => explorer_string( 'navigation' ),
 				),
 				array(
 					'before_widget' => '<section class="widget widget_pages">',

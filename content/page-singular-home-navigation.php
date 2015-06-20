@@ -1,3 +1,9 @@
+<?php
+/**
+ * Content For Home Navigation Page Template
+ * @since 1.0.0
+ */
+?>
 <article <?php hybrid_attr( 'post' ); ?>>
 
 <?php 

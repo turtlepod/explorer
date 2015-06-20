@@ -1141,10 +1141,9 @@ body.sidebar-toggle-active #sidebar-primary{
 
 
 /* Page Template: Home Navigation */
-
 #menu-home-items{
 	list-style: none;
-	margin-left: 0;
+	margin: 0;
 }
 #menu-home-items li{
 	background: #fff none repeat scroll 0 0;
@@ -1218,29 +1217,3 @@ body.sidebar-toggle-active #sidebar-primary{
 		-1px 1px 0 #2B2B2B,
 		1px 1px 0 #2B2B2B;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

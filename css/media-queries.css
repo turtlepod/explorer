@@ -38,6 +38,9 @@
 		padding-bottom: 35px;
 		width: 100%;
 	}
+	body.page-template-home-navigation #main{
+		padding-bottom: 0;
+	}
 	.page-navigation{
 		position: fixed;
 		bottom: 0;
@@ -67,6 +70,7 @@
 	body.plural .entry-byline .entry-published:before{
 		display: none;
 	}
+	#menu-home-items li,
 	.entry-wrap{
 		margin: 0;
 	}

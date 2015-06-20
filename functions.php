@@ -185,12 +185,72 @@ class Explorer_Home_Navigation extends Walker_Nav_Menu {
 		$item_output .= '<a'. $attributes .'>';
 		$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
 		$item_output .= '</a>';
-		$item_output .= '<br /><span class="menu-item-desc">' . $item->description . '</span>';
+		if( !empty( $item->description ) ){
+			$item_output .= '<br /><span class="menu-item-desc">' . $item->description . '</span>';
+		}
 		$item_output .= '</div>';
 		$item_output .= $args->after;
 
 		$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
 	}
+}
+
+/**
+ * Home Navigation Fallback CB
+ * @since 1.0.0
+ */
+function explorer_home_menu_fallback_cb(){
+?>
+	<div class="wrap">
+
+		<ul class="menu-items" id="menu-home-items">
+
+			<?php
+			/* === List All Category === */
+			$cat_loop_args = array(
+				'orderby' => 'name',
+				'order'   => 'ASC'
+			);
+			$categories = get_categories( $cat_loop_args );
+
+			/* Loop Category */
+			foreach( $categories as $category ){
+			?>
+				<li class="menu-item menu-item-type-taxonomy menu-item-object-category">
+					<div class="home-menu-item-wrap">
+						<a href="<?php echo esc_url( get_category_link( $category->term_id ) ); ?>"><?php echo $category->name; ?></a>
+						<?php if( isset( $category->description ) && !empty( $category->description ) ){ ?>
+							<br><span class="menu-item-desc"><?php echo $category->description; ?></span>
+						<?php } ?>
+					</div>
+				</li>
+			<?php } ?>
+
+			<?php
+			/* === List All Pages === */
+			$page_loop_args = array(
+				'post_type' => 'page',
+			);
+			$pages = new WP_Query( $page_loop_args );
+
+			// The Loop
+			if ( $pages->have_posts() ) {
+				while ( $pages->have_posts() ) { $pages->the_post();
+					?>
+					<li class="menu-item menu-item-type-post_type menu-item-object-page">
+						<div class="home-menu-item-wrap">
+							<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+						</div>
+					</li>
+					<?php 
+				} // end while 
+			} // end if
+			wp_reset_postdata();
+			?>
+		</ul>
+
+	</div>
+<?php
 }
 
 

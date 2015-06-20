@@ -14,6 +14,8 @@
 
 	</div><!-- .entry-wrap -->
 
+	<?php get_template_part( 'pagination/page' ); ?>
+
 </article><!-- .entry -->
 
 <?php comments_template( '', true ); // Load comments. ?>

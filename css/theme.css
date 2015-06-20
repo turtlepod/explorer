@@ -7,6 +7,10 @@ body{
 body.wordpress{
 	background: #f1f1f1;
 }
+body.wordpress.full-size-background{
+	background-size: cover !important;
+	background-attachment: fixed !important;
+}
 a{
 	color: #0073aa;
 }
@@ -44,7 +48,9 @@ code{
 }
 
 /* === IMAGES & MEDIA === */
-
+.html5-captions .wp-caption, .wp-caption{
+	background: #fafafa;
+}
 
 /* === CONTAINER === */
 #container{
@@ -801,6 +807,7 @@ body.singular .content-entry-wrap .entry-wrap{
 	background: #32373c;
 	color: #fff;
 }
+/* Archive : PREV */
 .previous-posts-link > a:before,
 .previous-posts-link > span:before{
 	content: "\f340";
@@ -808,6 +815,7 @@ body.singular .content-entry-wrap .entry-wrap{
 	vertical-align: top;
 	-webkit-font-smoothing: antialiased;
 }
+/* Archive : Next */
 .next-posts-link > a:before,
 .next-posts-link > span:before{
 	content: "\f344";
@@ -815,9 +823,8 @@ body.singular .content-entry-wrap .entry-wrap{
 	vertical-align: top;
 	-webkit-font-smoothing: antialiased;
 }
-.page-nav-comment{
-	font-size: 19px;
-	font-size: 1.9rem;
+/* Post : Comments Link */
+.page-nav-comments{
 }
 .page-nav-comments-link > .comments-link:before{
 	color: #fff;
@@ -831,12 +838,38 @@ body.singular .content-entry-wrap .entry-wrap{
 .page-nav-comments-link > .comments-link:hover:before{
 	color: #fff;
 }
-.page-nav-next{
+/* Attachment */
+.download-file-link > a:before,
+.download-file-link > span:before{
+	content: "\f316";
+	font-family: "dashicons";
+	vertical-align: top;
+	-webkit-font-smoothing: antialiased;
 }
+/* Page + Attachment : Parent Link */
+.parent-page-link > a:before,
+.parent-page-link > span:before{
+	content: "\f171";
+	font-family: "dashicons";
+	vertical-align: top;
+	-webkit-font-smoothing: antialiased;
+}
+/* Page : Home */
+.home-link > a:before,
+.home-link > span:before{
+	content: "\f102";
+	font-family: "dashicons";
+	vertical-align: top;
+	-webkit-font-smoothing: antialiased;
+}
+
 /* Width */
 body.plural .page-nav-prev,
 body.plural .page-nav-next,
-body.singular .page-nav-comment{
+body.singular .page-nav-comments,
+body.singular .page-nav-parent,
+body.singular .page-nav-home,
+body.singular .page-nav-download{
 	width: 50%;
 }
 

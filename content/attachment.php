@@ -14,6 +14,8 @@
 
 	</div><!-- .entry-wrap -->
 
+	<?php if ( is_attachment() ) get_template_part( 'pagination/attachment' ); ?>
+
 </article><!-- .entry -->
 
 <?php if ( is_attachment() ) comments_template( '', true ); // Load comments. ?>

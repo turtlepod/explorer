@@ -32,7 +32,7 @@
 
 	</div><!-- .entry-wrap -->
 
-	<?php get_template_part( 'pagination-singular' ); ?>
+	<?php get_template_part( 'pagination/post' ); ?>
 
 </article><!-- .entry -->
 

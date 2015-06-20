@@ -32,7 +32,7 @@
 
 						</div><!-- .content-entry-wrap-->
 
-						<?php if( !is_singular() ) get_template_part( 'pagination' ); ?>
+						<?php if( !is_singular() ) get_template_part( 'pagination/archive' ); ?>
 
 					<?php } else { /* No Posts Found */ ?>
 

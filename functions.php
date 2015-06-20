@@ -64,17 +64,29 @@ function explorer_setup(){
 	add_theme_support( 'tamatebako-customize-mobile-view' );
 
 	/* === Custom Background === */
-	add_theme_support( 'custom-background', array( 'default-color' => 'f1f1f1' ) );
+	$custom_bg_args = array(
+		'default-color'          => 'f1f1f1',
+		'default-image'          => get_template_directory_uri() . '/css/images/background.jpg',
+		'default-repeat'         => 'no-repeat',
+		'default-position-x'     => 'center',
+		'default-attachment'     => 'fixed',
+	);
+	add_theme_support( 'custom-background', $custom_bg_args );
 
 	/* === Set Content Width === */
 	hybrid_set_content_width( 610 );
+
+	/* === Customizer Option === */
+	add_action( 'customize_register', 'explorer_customizer_register' );
+
+	/* Body Class */
+	add_action( 'body_class', 'explorer_body_class' );
 
 }
 
 /**
  * Get Post Type Name
- * @since 0.1.0
- * 
+ * @since 1.0.0
  */
 function explorer_get_post_type_name( $id = '' ){
 	if( !$id ){ $id = get_the_ID(); }
@@ -86,7 +98,55 @@ function explorer_get_post_type_name( $id = '' ){
 	return $name;
 }
 
+/**
+ * Customizer Options
+ * @since 1.0.0
+ */
+function explorer_customizer_register( $wp_customize ){
 
+	/* === BACKGROUND === */
+
+	/* Full size bg setting */
+	$wp_customize->add_setting( 'full_size_background', array(
+    	'default'             => 0,
+		'type'                => 'theme_mod',
+		'capability'          => 'edit_theme_options',
+		'sanitize_callback'   => 'explorer_sanitize_checkbox',
+    ));
+
+	/* add it in background image section */
+    $wp_customize->add_control( 'explorer_full_size_background', array(
+    	'settings'            => 'full_size_background',
+		'section'             => 'background_image',
+		'label'               => __( 'Full Size Background', 'explorer' ),
+		'type'                => 'checkbox',
+		'priority'            => 20,
+	));
+
+}
+
+/**
+ * Add Body Class
+ * @since 1.0.0
+ */
+function explorer_body_class( $classes ){
+	/* full size background */
+	if ( explorer_sanitize_checkbox( get_theme_mod( 'full_size_background', '' ) ) ){
+		$classes[] = 'full-size-background';
+	}
+	return $classes;
+}
+
+/**
+ * Utillity: Sanitize Checkbox
+ * @since 1.0.0
+ */
+function explorer_sanitize_checkbox( $input ){
+	if ( isset($input) && !empty($input) ){
+		return true;
+	}
+	return false;
+}
 
 
 do_action( 'explorer_after_setup_theme' );

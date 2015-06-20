@@ -35,7 +35,7 @@
 	#main{
 		margin: 0;
 		padding-top: 47px;
-		padding-bottom: 45px;
+		padding-bottom: 35px;
 		width: 100%;
 	}
 	.page-navigation{
@@ -66,6 +66,9 @@
 	}
 	body.plural .entry-byline .entry-published:before{
 		display: none;
+	}
+	.entry-wrap{
+		margin: 0;
 	}
 }
 /* === ADMIN BAR FIX === */

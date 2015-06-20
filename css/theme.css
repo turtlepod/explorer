@@ -158,6 +158,9 @@ code{
 	body.search .loop-title:before{
 		content: "\f179";
 	}
+	body.page-template-home-navigation .loop-title:before{
+		content: "\f322";
+	}
 
 /* === ENTRY === */
 .entry{
@@ -1135,3 +1138,109 @@ body.sidebar-toggle-active #sidebar-primary{
 		content: " | ";
 		color: #ccc;
 	}
+
+
+/* Page Template: Home Navigation */
+
+#menu-home-items{
+	list-style: none;
+	margin-left: 0;
+}
+#menu-home-items li{
+	background: #fff none repeat scroll 0 0;
+	border-bottom: 1px solid #ccc;
+	margin: 0 1rem;
+	padding: 1rem;
+	min-height: 65px;
+}
+#menu-home-items li:after{
+	content:".";display:block;height:0;clear:both;visibility:hidden;
+}
+#menu-home-items li a{
+	margin: 0;
+	font-size: 17px;
+	font-size: 1.7rem;
+}
+.home-menu-item-wrap{
+	width:100%;
+	padding-left: 60px;
+	padding-left: 6rem;
+	float: left;
+	position: relative;
+}
+.home-menu-item-wrap:after{
+	content:".";display:block;height:0;clear:both;visibility:hidden;
+}
+.home-menu-item-wrap:before{
+	content: "\f497";
+	font-family: "dashicons";
+	vertical-align: top;
+	color: #222;
+	font-size: 50px;
+	font-size: 5rem;
+	position: absolute;
+	left: 0;
+	top: 10px;
+	top: 1rem;
+	-webkit-font-smoothing: antialiased;
+}
+/* CPT: Page */
+#menu-home-items li.menu-item-object-page .home-menu-item-wrap:before{
+	content: "\f105";
+}
+/* Tax: Category */
+#menu-home-items li.menu-item-object-category .home-menu-item-wrap:before{
+	content: "\f318";
+	color: #edc100;
+	text-shadow:
+		-1px -1px 0 #2B2B2B,
+		1px -1px 0 #2B2B2B,
+		-1px 1px 0 #2B2B2B,
+		1px 1px 0 #2B2B2B;
+}
+/* Tax: Tags */
+#menu-home-items li.menu-item-object-post_tag .home-menu-item-wrap:before{
+	content: "\f323";
+	color: #ff7a77;
+	text-shadow:
+		-1px -1px 0 #2B2B2B,
+		1px -1px 0 #2B2B2B,
+		-1px 1px 0 #2B2B2B,
+		1px 1px 0 #2B2B2B;
+}
+/* External Link */
+#menu-home-items li.menu-item-object-custom .home-menu-item-wrap.rel-external:before{
+	content: "\f103";
+	color: #ccc;
+	text-shadow:
+		-1px -1px 0 #2B2B2B,
+		1px -1px 0 #2B2B2B,
+		-1px 1px 0 #2B2B2B,
+		1px 1px 0 #2B2B2B;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

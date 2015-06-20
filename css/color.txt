@@ -1,3 +1,30 @@
+Link Color: #0073aa;
+HOver: #00a0d2
+
+Blue Bar: #0073aa;
+TExt: #fff
+
+Black Bar: #191e23
+Text: #00b9eb;
+
+Black Bar (alt): #2f2f2f
+color: #fff;
+
+Submenu BG: 32373c;
+text: #eee
+Text hover: #00b9eb
+
+Gray (light bar/bg): #23282d
+Icon: #9ea3a8
+Color: #eee
+
+
+
+=================================
+
+
+OLD:
+
 Color: #444
 
 Background: #f9f9f9

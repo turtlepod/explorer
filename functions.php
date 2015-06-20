@@ -64,7 +64,7 @@ function explorer_setup(){
 	add_theme_support( 'tamatebako-customize-mobile-view' );
 
 	/* === Custom Background === */
-	add_theme_support( 'custom-background', array( 'default-color' => 'f9f9f9' ) );
+	add_theme_support( 'custom-background', array( 'default-color' => 'f1f1f1' ) );
 
 	/* === Set Content Width === */
 	hybrid_set_content_width( 1200 );

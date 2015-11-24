@@ -3,58 +3,71 @@
  * Template Name: Home Navigation
  */
 ?>
-<?php get_header(); ?>
+<!DOCTYPE html>
+<html <?php language_attributes( 'html' ); ?> class="no-js">
 
-<div id="container">
+<head>
+<?php wp_head(); ?>
+</head>
 
-	<?php tamatebako_skip_to_content(); ?>
+<body <?php body_class(); ?>>
 
-	<?php get_template_part( 'site-header' ); ?>
+	<div id="container">
 
-	<div id="main">
+		<?php tamatebako_skip_to_content(); ?>
 
-		<div class="main-inner">
+		<?php get_header(); ?>
 
-			<div class="main-wrap">
+		<div class="wrap">
 
-				<main <?php hybrid_attr( 'content' ); ?>>
+			<div id="main">
 
-					<?php if ( have_posts() ){ /* Posts Found */ ?>
+				<div class="wrap">
 
-						<?php get_template_part( 'title-bar' ); ?>
+					<main id="content" class="content" role="main">
 
-						<div class="content-entry-wrap">
+						<?php if ( have_posts() ){ /* Posts Found */ ?>
 
-							<?php while ( have_posts() ) {  /* Start Loop */ ?>
+							<?php get_template_part( 'part/title-bar' ); ?>
 
-								<?php the_post(); /* Load Post Data */ ?>
+							<div class="wrap">
 
-								<?php /* Start Content */ ?>
-								<?php get_template_part( 'content/page-singular', 'home-navigation' ); // Loads the content/*.php template. ?>
-								<?php /* End Content */ ?>
+								<?php while ( have_posts() ) {  /* Start Loop */ ?>
 
-							<?php } /* End Loop */ ?>
+									<?php the_post(); /* Load Post Data */ ?>
 
-						</div><!-- .content-entry-wrap-->
+									<?php /* Start Content */ ?>
+									<?php tamatebako_get_template( 'content' ); ?>
+									<?php /* End Content */ ?>
 
-						<?php if( !is_singular() ) get_template_part( 'pagination/archive' ); ?>
+								<?php } /* End Loop */ ?>
 
-					<?php } else { /* No Posts Found */ ?>
+							</div><!-- #content > .wrap -->
 
-						<?php tamatebako_content_error(); ?>
+							<?php if( !is_singular() ) get_template_part( 'part/pagination-archive' ); ?>
 
-					<?php } /* End Posts Found Check */ ?>
+						<?php } else { /* No Posts Found */ ?>
 
-				</main><!-- #content -->
+							<div class="wrap">
+								<?php tamatebako_content_error(); ?>
+							</div><!-- #content > .wrap -->
 
-			</div><!-- .main-wrap -->
+						<?php } /* End Posts Found Check */ ?>
 
-		</div><!-- .main-inner -->
+					</main><!-- #content -->
 
-	</div><!-- #main -->
+				</div><!-- #main > .wrap -->
 
-</div><!-- #container -->
+			</div><!-- #main -->
 
-<?php hybrid_get_sidebar( 'primary' ); ?>
+		</div><!-- #container > .wrap -->
 
-<?php get_footer(); // Loads the footer.php template. ?>
+
+	</div><!-- #container -->
+
+	<?php tamatebako_get_sidebar( 'primary' ); ?>
+
+	<?php get_footer(); ?>
+
+</body>
+</html>

@@ -1,7 +1,8 @@
 <?php
 /* If a post password is required or no comments are given and comments/pings are closed, return. */
-if ( post_password_required() || ( !have_comments() && !comments_open() && !pings_open() ) )
+if ( post_password_required() || ( !have_comments() && !comments_open() && !pings_open() ) ){
 	return;
+}
 ?>
 
 <section id="comments-template" class="comments-section">
@@ -21,8 +22,8 @@ if ( post_password_required() || ( !have_comments() && !comments_open() && !ping
 			<ol class="comment-list">
 				<?php wp_list_comments(
 					array(
-						'callback'     => 'hybrid_comments_callback',
-						'end-callback' => 'hybrid_comments_end_callback'
+						'callback'     => 'tamatebako_comments_callback',
+						'end-callback' => 'tamatebako_comments_end_callback'
 					)
 				); ?>
 			</ol><!-- .comment-list -->

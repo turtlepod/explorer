@@ -1,0 +1,169 @@
+# Copyright (C) 2014 David Chandra Purnama
+# This file is distributed under the GNU General Public License v2.0 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress Theme\n"
+"Report-Msgid-Bugs-To: http://genbu.me/contact/\n"
+"POT-Creation-Date: 2015-11-24 12:37+0700\n"
+"PO-Revision-Date: 2015-09-05 12:42+0700\n"
+"Last-Translator: David Chandra Purnama <david@shellcreeper.com>\n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e;esc_attr__;esc_html_e;esc_html__;"
+"__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c;_nc:4c,1,2;"
+"_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: content/content.php:7 content/page.php:7 content/post.php:7
+msgctxt "entry post type prefix"
+msgid "Type:"
+msgstr ""
+
+#: header.php:18
+msgctxt "sidebar toggle (accessibility)"
+msgid "Sidebar Toggle"
+msgstr ""
+
+#: includes/background.php:19
+msgctxt "customizer"
+msgid "Full Size Background"
+msgstr ""
+
+#: includes/setup.php:16
+msgctxt "sidebar name"
+msgid "Primary Sidebar"
+msgstr ""
+
+#: includes/setup.php:23
+msgctxt "nav menu name"
+msgid "Home Navigation Page Template"
+msgstr ""
+
+#: includes/translation.php:13
+msgctxt "accessibility"
+msgid "Skip to content"
+msgstr ""
+
+#: includes/translation.php:16
+msgctxt "pagination"
+msgid "Next"
+msgstr ""
+
+#: includes/translation.php:17
+msgctxt "pagination"
+msgid "Previous"
+msgstr ""
+
+#: includes/translation.php:20
+msgctxt "nav menu"
+msgid "Search&hellip;"
+msgstr ""
+
+#: includes/translation.php:21
+msgctxt "nav menu"
+msgid "Search"
+msgstr ""
+
+#: includes/translation.php:22
+msgctxt "nav menu"
+msgid "Expand Search Form"
+msgstr ""
+
+#: includes/translation.php:23
+msgctxt "nav menu"
+msgid "Home"
+msgstr ""
+
+#: includes/translation.php:26
+msgctxt "entry"
+msgid "404 Not Found"
+msgstr ""
+
+#: includes/translation.php:27
+msgctxt "entry"
+msgid "Apologies, but no entries were found."
+msgstr ""
+
+#: includes/translation.php:28
+msgctxt "entry"
+msgid "Next"
+msgstr ""
+
+#: includes/translation.php:29
+msgctxt "entry"
+msgid "Previous"
+msgstr ""
+
+#: includes/translation.php:32
+msgctxt "comment"
+msgid "Next"
+msgstr ""
+
+#: includes/translation.php:33
+msgctxt "comment"
+msgid "Previous"
+msgstr ""
+
+#: includes/translation.php:34
+msgctxt "comment"
+msgid "Comments are closed, but trackbacks and pingbacks are open."
+msgstr ""
+
+#: includes/translation.php:35
+msgctxt "comment"
+msgid "Comments are closed."
+msgstr ""
+
+#: includes/translation.php:38
+msgctxt "entry"
+msgid "(Untitled)"
+msgstr ""
+
+#: includes/translation.php:39
+msgctxt "entry"
+msgid "Read More"
+msgstr ""
+
+#: includes/translation.php:40
+msgctxt "archive title"
+msgid "Search:"
+msgstr ""
+
+#: includes/translation.php:41
+msgctxt "comment"
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: includes/utility.php:11 includes/utility.php:12
+msgctxt "customizer"
+msgid "Custom CSS"
+msgstr ""
+
+#: part/pagination-attachment.php:33 part/pagination-page.php:33
+msgctxt "home button pagination (accessibility)"
+msgid "Back to Home"
+msgstr ""
+
+#: part/title-bar.php:12
+msgctxt "archive title"
+msgid "Blog"
+msgstr ""
+
+#: sidebar/primary.php:13
+msgctxt "default widget"
+msgid "About"
+msgstr ""
+
+#: sidebar/primary.php:25
+msgctxt "default widget"
+msgid "Navigation"
+msgstr ""

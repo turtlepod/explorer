@@ -1,6 +1,6 @@
-<div id="sidebar-primary-wrap">
+<div id="sidebar-primary">
 
-	<aside <?php hybrid_attr( 'sidebar', 'primary' ); ?>>
+	<aside class="sidebar">
 
 		<?php if ( is_active_sidebar( 'primary' ) ) : // If the sidebar has widgets. ?>
 
@@ -10,7 +10,7 @@
 
 			<?php the_widget( 'WP_Widget_Text',
 				array(
-					'title' => explorer_string( 'about' ),
+					'title' => _x( 'About', 'default widget', 'explorer' ),
 					'text' => get_bloginfo( 'description' )
 				),
 				array(
@@ -22,7 +22,7 @@
 			); ?>
 			<?php the_widget( 'WP_Widget_Pages',
 				array(
-					'title' => explorer_string( 'navigation' ),
+					'title' => _x( 'Navigation', 'default widget', 'explorer' ),
 				),
 				array(
 					'before_widget' => '<section class="widget widget_pages">',
@@ -43,6 +43,6 @@
 
 		<?php endif; // End widgets check. ?>
 
-	</aside><!-- #sidebar-primary -->
+	</aside><!-- #sidebar-primary > .sidebar -->
 
-</div>
+</div><!-- #sidebar-primary -->

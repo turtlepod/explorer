@@ -1,12 +1,6 @@
-<?php
-/**
- * Attachment Content
- * @since 1.0.0
- */
-?>
-<article <?php hybrid_attr( 'post' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<div class="entry-wrap">
+	<div class="wrap">
 
 		<div class="entry-content">
 			<?php tamatebako_attachment(); ?>
@@ -15,12 +9,11 @@
 
 		<footer class="entry-footer">
 			<?php edit_post_link(); ?>
-			<?php tamatebako_entry_terms(); ?>
 		</footer><!-- .entry-footer -->
 
-	</div><!-- .entry-wrap -->
+	</div><!-- .entry > .wrap -->
 
-	<?php if ( is_attachment() ) get_template_part( 'pagination/attachment' ); ?>
+	<?php if ( is_attachment() ) get_template_part( 'part/pagination-attachment' ); ?>
 
 </article><!-- .entry -->
 

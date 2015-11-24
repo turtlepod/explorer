@@ -1,26 +1,24 @@
-<?php
-/**
- * Content Template for "Page" Post Type in Singular Pages
- * @since 1.0.0
- */
-?>
-<article <?php hybrid_attr( 'post' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<div class="entry-wrap">
+	<div class="wrap">
 
-		<div <?php hybrid_attr( 'entry-content' ); ?>>
+		<header class="entry-header">
+			<?php tamatebako_entry_title(); ?>
+		</header><!-- .entry-header -->
+
+		<div class="entry-content">
 			<?php the_content(); ?>
 			<?php wp_link_pages(); ?>
 		</div><!-- .entry-content -->
 
 		<footer class="entry-footer">
 			<?php edit_post_link(); ?>
-			<?php tamatebako_entry_terms(); ?>
+			<?php tamatebako_entry_taxonomies(); ?>
 		</footer><!-- .entry-footer -->
 
-	</div><!-- .entry-wrap -->
+	</div><!-- .entry > .wrap -->
 
-	<?php get_template_part( 'pagination/page' ); ?>
+	<?php get_template_part( 'part/pagination-page' ); ?>
 
 </article><!-- .entry -->
 

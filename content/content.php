@@ -1,28 +1,17 @@
-<?php
-/**
- * Default Content Template for Post Type Entry in Archive Pages
- * @since 1.0.0
- */
-?>
-<article <?php hybrid_attr( 'post' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<div class="entry-wrap">
+	<div class="wrap">
 
 		<div class="entry-title-wrap">
-
-			<?php the_title( '<h2 ' . hybrid_get_attr( 'entry-title' ) . '><a href="' . get_permalink() . '" rel="bookmark" itemprop="url">', '</a></h2>' ); ?>
-
-			<div class="entry-type"><?php echo explorer_string( 'entry_type' ); ?> <?php echo explorer_get_post_type_name( get_the_ID() ); ?></div>
-
+			<?php tamatebako_entry_title(); ?>
+			<div class="entry-type"><?php _x( 'Type:', 'entry post type prefix', 'explorer' ); ?> <?php echo explorer_get_post_type_name( get_the_ID() ); ?></div>
 		</div><!-- .entry-title-wrap -->
 
 		<div class="entry-byline">
-
-			<time <?php hybrid_attr( 'entry-published' ); ?>><?php echo get_the_date(); ?></time>
-			<?php comments_popup_link( number_format_i18n( 0 ), number_format_i18n( 1 ), '%', 'comments-link', '' ); ?>
-
+			<?php tamatebako_entry_date(); ?>
+			<?php tamatebako_comments_link(); ?>
 		</div><!-- .entry-byline -->
 
-	</div><!-- .entry-wrap -->
+	</div><!-- .entry > .wrap -->
 
 </article><!-- .entry -->

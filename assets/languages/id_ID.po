@@ -4,9 +4,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Theme\n"
 "Report-Msgid-Bugs-To: http://genbu.me/contact/\n"
-"POT-Creation-Date: 2015-11-24 12:38+0700\n"
-"PO-Revision-Date: 2015-11-24 12:42+0700\n"
+"POT-Creation-Date: 2015-12-16 11:14+0700\n"
+"PO-Revision-Date: 2015-12-16 11:14+0700\n"
+"Last-Translator: \n"
 "Language-Team: \n"
+"Language: id_ID\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,13 +16,13 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-Basepath: ../..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;esc_attr_e;esc_attr__;esc_html_e;esc_html__;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e;esc_attr__;esc_html_e;esc_html__;"
+"__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c;_nc:4c,1,2;"
+"_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
 "X-Textdomain-Support: yes\n"
-"Last-Translator: \n"
-"Language: id_ID\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: content/content.php:7 content/page.php:7 content/post.php:7
+#: content/content.php:7 content/page.php:7 content/post.php:8
 msgctxt "entry post type prefix"
 msgid "Type:"
 msgstr "Tipe:"
@@ -35,6 +37,31 @@ msgctxt "customizer"
 msgid "Full Size Background"
 msgstr "Latar Belakang Ukuran Penuh"
 
+#: includes/custom-fonts.php:10
+msgctxt "customizer"
+msgid "Site Title Font"
+msgstr "Font Judul Situs"
+
+#: includes/custom-fonts.php:16
+msgctxt "customizer"
+msgid "Post Title Font"
+msgstr "Font Judul Pos"
+
+#: includes/custom-fonts.php:22
+msgctxt "customizer"
+msgid "Base Font"
+msgstr "Font Dasar"
+
+#: includes/custom-fonts.php:39
+msgctxt "Google Font Subset: add new subset( greek, cyrillic, vietnamese )"
+msgid "no-subset"
+msgstr "no-subset"
+
+#: includes/custom-fonts.php:44
+msgctxt "customizer"
+msgid "Fonts"
+msgstr "Fonts"
+
 #: includes/setup.php:16
 msgctxt "sidebar name"
 msgid "Primary Sidebar"
@@ -44,6 +71,21 @@ msgstr "Sidebar Utama"
 msgctxt "nav menu name"
 msgid "Home Navigation Page Template"
 msgstr "Template Halaman Navigasi Beranda"
+
+#: includes/thumbnail-icon.php:36
+msgctxt "customizer"
+msgid "Show icons, never thumbnails."
+msgstr "Tampilkan icon tanpa thumbnail."
+
+#: includes/thumbnail-icon.php:37
+msgctxt "customizer"
+msgid "Display featured image."
+msgstr "Tampilkan gambar utama."
+
+#: includes/thumbnail-icon.php:38
+msgctxt "customizer"
+msgid "Display icon on featured image."
+msgstr "Tampilkan gambar utama dan icon."
 
 #: includes/translation.php:13
 msgctxt "accessibility"
@@ -165,10 +207,10 @@ msgctxt "default widget"
 msgid "Navigation"
 msgstr "Navigasi"
 
-msgctxt "entry"
-msgid "Permalink"
-msgstr "Permalink"
+#~ msgctxt "entry"
+#~ msgid "Permalink"
+#~ msgstr "Permalink"
 
-msgctxt "archive title"
-msgid "Search results for"
-msgstr "Hasil pencarian untuk"
+#~ msgctxt "archive title"
+#~ msgid "Search results for"
+#~ msgstr "Hasil pencarian untuk"

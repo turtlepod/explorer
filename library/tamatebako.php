@@ -6,7 +6,7 @@
  *  From the sea comes the sad, sweet voice of the princess:
  *  "I told you not to open that box. In it was your old age ..."
  * 
- * @version   3.1.1
+ * @version   3.1.2
  * @author    David Chandra <david@genbu.me>
  * @copyright Copyright (c) 2015, Genbu Media
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html

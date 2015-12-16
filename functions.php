@@ -6,11 +6,6 @@
 /* Load Library. */
 require_once( trailingslashit( get_template_directory() ) . 'library/tamatebako.php' );
 
-/* Load External Library. */
-if( ! function_exists( 'get_the_image' ) ){
-	tamatebako_include( 'includes/get-the-image' );
-}
-
 /* Load theme general setup */
 add_action( 'after_setup_theme', 'explorer_theme_setup', 5 );
 
@@ -31,6 +26,9 @@ function explorer_theme_setup(){
 	/* === TRANSLATION === */
 	tamatebako_include( 'includes/translation' );
 
+	/* === CUSTOM FONTS === */
+	tamatebako_include( 'includes/custom-fonts' );
+
 	/* === SCRIPTS === */
 	tamatebako_include( 'includes/scripts' );
 
@@ -49,6 +47,8 @@ function explorer_theme_setup(){
 	/* === HOME NAVIGATION === */
 	tamatebako_include( 'includes/home-navigation' );
 
+	/* === THUMBNAIL / ICON === */
+	tamatebako_include( 'includes/thumbnail-icon' );
 }
 
 do_action( 'tamatebako_after_setup' );

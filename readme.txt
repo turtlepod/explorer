@@ -42,11 +42,19 @@ You can easily do this to setup this page:
 
 == Changelog ==
 
-= 1.0.0 - 20.JUN.2015 =
+= 2.1.0 - 16.DEC.2015 =
 
-* Initial release.
+* Fix bug for auto-load child theme CSS (tamatebako update).
+* Activate Fonts Module (site-title, entry title, base).
+* Merge Enqueue and Register Script Function.
+* remove get the image script (unused).
+* Add thumbnail/icon options.
+* Fix translation.
 
 = 2.0.0 - 24.NOV.2015 =
 
-* No longer using "Hybrid Core"
+* No longer using "Hybrid Core". Now use tamatebako.
 
+= 1.0.0 - 20.JUN.2015 =
+
+* Initial release.

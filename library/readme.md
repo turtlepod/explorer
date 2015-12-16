@@ -8,6 +8,10 @@ This framework is licensed under the [GNU General Public License](http://www.gnu
 
 ###Changelog
 
+**3.1.2 - 14.12.2015**
+
+* Fix child theme style.css to parent theme style.css deps.
+
 **3.1.1 - 05.09.2015**
 
 * add comment in moderation text notice.

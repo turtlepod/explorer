@@ -142,7 +142,7 @@ function tamatebako_styles(){
 		wp_register_style(
 			sanitize_title( $tamatebako->child . '-style' ),
 			esc_url( $stylesheet_uri ),
-			array( sanitize_title( $tamatebako->name ) ),
+			array( sanitize_title( $tamatebako->name ) . '-style' ),
 			tamatebako_child_theme_version(),
 			'all'
 		);

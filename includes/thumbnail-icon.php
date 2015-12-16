@@ -20,7 +20,7 @@ function explorer_customizer_register( $wp_customize ){
 
 	/* Add Setting. */
 	$wp_customize->add_setting( 'thumbnail_option', array(
-    	'default'             => 'icon',
+    	'default'             => 'image_icon',
 		'type'                => 'theme_mod',
 		'capability'          => 'edit_theme_options',
 		'sanitize_callback'   => 'explorer_sanitize_thumbnail_option',

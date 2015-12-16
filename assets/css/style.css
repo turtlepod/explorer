@@ -313,8 +313,7 @@ body.singular #content > .wrap .entry > .wrap{
 			content: "\f125";
 		}
 		/* Protected: Key */
-		.entry.protected .entry-title-wrap:before,
-		.entry.protected .image-icon-small:before{
+		.entry.post-password-required .entry-title-wrap:before{
 			content: "\f112";
 			color: #edc100;
 			text-shadow:
@@ -323,9 +322,13 @@ body.singular #content > .wrap .entry > .wrap{
 				-1px 1px 0 #2B2B2B,
 				1px 1px 0 #2B2B2B;
 		}
+		.entry.post-password-required .image-icon-small:before{
+			content: "\f112";
+			color: #edc100;
+			background: #222;
+		}
 		/* Sticky */
-		.entry.sticky .entry-title-wrap:before,
-		.entry.sticky .image-icon-small:before{
+		.entry.sticky .entry-title-wrap:before{
 			content: "\f109";
 			color: #e50000;
 			text-shadow:
@@ -333,6 +336,10 @@ body.singular #content > .wrap .entry > .wrap{
 				1px -1px 0 #2B2B2B,
 				-1px 1px 0 #2B2B2B,
 				1px 1px 0 #2B2B2B;
+		}
+		.entry.sticky .image-icon-small:before{
+			content: "\f109";
+			color: #e50000;
 		}
 		.entry-title-wrap{
 			width:65%;

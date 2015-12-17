@@ -42,6 +42,10 @@ You can easily do this to setup this page:
 
 == Changelog ==
 
+= 2.1.1 - 17.DEC.2015 =
+
+* Fix bug: thumbnail default value.
+
 = 2.1.0 - 16.DEC.2015 =
 
 * Fix bug for auto-load child theme CSS (tamatebako update).

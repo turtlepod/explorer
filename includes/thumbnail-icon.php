@@ -50,7 +50,7 @@ function explorer_sanitize_thumbnail_option( $input ){
 	if( in_array( $input, $choices ) ){
 		return $input;
 	}
-	return 'icon';
+	return 'image_icon';
 }
 
 

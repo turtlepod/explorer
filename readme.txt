@@ -50,6 +50,7 @@ You can easily do this to setup this page:
 * remove get the image script (unused).
 * Add thumbnail/icon options.
 * Fix translation.
+* Fix icon CSS.
 
 = 2.0.0 - 24.NOV.2015 =
 

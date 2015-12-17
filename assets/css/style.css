@@ -148,10 +148,10 @@ code{
 	body.attachment-video .archive-title:before{
 		content: "\f126";
 	}
-	body.taxonomy-category .archive-title:before{
+	body.archive.category .archive-title:before{
 		content: "\f318";
 	}
-	body.taxonomy-post_tag .archive-title:before{
+	body.archive.tag .archive-title:before{
 		content: "\f323";
 	}
 	body.search .archive-title:before{
@@ -490,12 +490,12 @@ body.singular #content > .wrap .entry > .wrap{
 		.post-edit-link:after{
 			content:".";display:block;height:0;clear:both;visibility:hidden;
 		}
-		.entry-meta{
+		.entry-taxonomies{
 		}
-			.entry-meta .entry-terms{
+			.entry-taxonomies .entry-taxonomy{
 				display: block;
 			}
-			.entry-meta .entry-terms:before{
+			.entry-taxonomies .entry-taxonomy:before{
 				content: "\f501";
 				font-family: "dashicons";
 				vertical-align: top;
@@ -504,15 +504,15 @@ body.singular #content > .wrap .entry > .wrap{
 				margin-right: 0.5rem;
 				-webkit-font-smoothing: antialiased;
 			}
-			.entry-meta .entry-terms.category:before{
+			.entry-taxonomies .entry-taxonomy.category:before{
 				content: "\f318";
 			}
-			.entry-meta .entry-terms.post_tag:before{
+			.entry-taxonomies .entry-taxonomy.post_tag:before{
 				content: "\f323";
 			}
-				.entry-meta .entry-terms a{
+				.entry-taxonomies .entry-taxonomy a{
 				}
-				.entry-meta .term-name{
+				.entry-taxonomies .entry-taxonomy-text{
 					display: none;
 				}
 

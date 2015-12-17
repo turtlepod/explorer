@@ -3,6 +3,7 @@
 	<div class="wrap">
 
 		<div class="entry-title-wrap">
+			<?php explorer_thumbnail_html(); ?>
 			<?php tamatebako_entry_title(); ?>
 			<div class="entry-type"><?php _ex( 'Type:', 'entry post type prefix', 'explorer' ); ?> <?php echo explorer_get_post_type_name( get_the_ID() ); ?></div>
 		</div><!-- .entry-title-wrap -->

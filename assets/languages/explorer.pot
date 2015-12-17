@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Theme\n"
 "Report-Msgid-Bugs-To: http://genbu.me/contact/\n"
-"POT-Creation-Date: 2015-11-24 12:37+0700\n"
+"POT-Creation-Date: 2015-12-16 11:08+0700\n"
 "PO-Revision-Date: 2015-09-05 12:42+0700\n"
 "Last-Translator: David Chandra Purnama <david@shellcreeper.com>\n"
 "Language-Team: \n"
@@ -23,7 +23,7 @@ msgstr ""
 "X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: content/content.php:7 content/page.php:7 content/post.php:7
+#: content/content.php:7 content/page.php:7 content/post.php:8
 msgctxt "entry post type prefix"
 msgid "Type:"
 msgstr ""
@@ -38,6 +38,31 @@ msgctxt "customizer"
 msgid "Full Size Background"
 msgstr ""
 
+#: includes/custom-fonts.php:10
+msgctxt "customizer"
+msgid "Site Title Font"
+msgstr ""
+
+#: includes/custom-fonts.php:16
+msgctxt "customizer"
+msgid "Post Title Font"
+msgstr ""
+
+#: includes/custom-fonts.php:22
+msgctxt "customizer"
+msgid "Base Font"
+msgstr ""
+
+#: includes/custom-fonts.php:39
+msgctxt "Google Font Subset: add new subset( greek, cyrillic, vietnamese )"
+msgid "no-subset"
+msgstr ""
+
+#: includes/custom-fonts.php:44
+msgctxt "customizer"
+msgid "Fonts"
+msgstr ""
+
 #: includes/setup.php:16
 msgctxt "sidebar name"
 msgid "Primary Sidebar"
@@ -46,6 +71,21 @@ msgstr ""
 #: includes/setup.php:23
 msgctxt "nav menu name"
 msgid "Home Navigation Page Template"
+msgstr ""
+
+#: includes/thumbnail-icon.php:36
+msgctxt "customizer"
+msgid "Show icons, never thumbnails."
+msgstr ""
+
+#: includes/thumbnail-icon.php:37
+msgctxt "customizer"
+msgid "Display featured image."
+msgstr ""
+
+#: includes/thumbnail-icon.php:38
+msgctxt "customizer"
+msgid "Display icon on featured image."
 msgstr ""
 
 #: includes/translation.php:13

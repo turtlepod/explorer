@@ -136,7 +136,7 @@ code{
 		color: #fff;
 		-webkit-font-smoothing: antialiased;
 	}
-	body.singular-page .archive-title:before{
+	body.singular.page .archive-title:before{
 		content: "\f105";
 	}
 	body.attachment-image .archive-title:before{
@@ -157,7 +157,7 @@ code{
 	body.search .archive-title:before{
 		content: "\f179";
 	}
-	body.page-template-home-navigation .archive-title:before{
+	body.page-template-home-navigation #content .archive-title:before{
 		content: "\f322";
 	}
 

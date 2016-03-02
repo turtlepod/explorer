@@ -42,6 +42,10 @@ You can easily do this to setup this page:
 
 == Changelog ==
 
+= 2.1.2 - 02.MAR.2015 =
+
+* Fix bug: Duplicate page title.
+
 = 2.1.1 - 17.DEC.2015 =
 
 * Fix bug: thumbnail default value.

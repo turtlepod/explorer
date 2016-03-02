@@ -2,10 +2,6 @@
 
 	<div class="wrap">
 
-		<header class="entry-header">
-			<?php tamatebako_entry_title(); ?>
-		</header><!-- .entry-header -->
-
 		<div class="entry-content">
 			<?php the_content(); ?>
 			<?php wp_link_pages(); ?>

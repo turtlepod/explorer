@@ -690,6 +690,13 @@ body.singular #content > .wrap .entry > .wrap{
 					}
 				.comment-content{
 				}
+					.comment-awaiting-moderation{
+						background: #fffa7c;
+						padding: 10px;
+						padding: 1rem;
+						text-align: center;
+						border: 1px solid #e0da23;
+					}
 					.comment-content p{
 						margin-bottom: 10px;
 						margin-bottom: 1rem;

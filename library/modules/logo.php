@@ -35,7 +35,7 @@ function tamatebako_logo_args(){
 }
 
 
-/* Register Custom CSS to Customizer */
+/* Register Logo Upload to Customizer */
 add_action( 'customize_register', 'tamatebako_logo_customize_register' );
 
 /**

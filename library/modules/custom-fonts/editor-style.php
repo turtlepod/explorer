@@ -83,7 +83,7 @@ function tamatebako_fonts_mce_css( $mce_css ){
 	}
 
 	/* add font rules. */
-	$mce_css .= ', ' . add_query_arg( 'action', 'tamatebako_fonts_mce_css', admin_url( 'admin-ajax.php' ) );
+	$mce_css .= ', ' . add_query_arg( array( 'action' => 'tamatebako_fonts_mce_css', '_nonce' => wp_create_nonce( 'tamatebako-fonts-mce-nonce', __FILE__ ) ), admin_url( 'admin-ajax.php' ) );
 	return $mce_css;
 }
 
@@ -96,6 +96,12 @@ add_action( 'wp_ajax_no_priv_tamatebako_fonts_mce_css', 'tamatebako_fonts_mce_cs
  * Ajax Callback
  */
 function tamatebako_fonts_mce_css_ajax_callback(){
+
+	/* Check Nonce */
+	$nonce = isset( $_REQUEST['_nonce'] ) ? $_REQUEST['_nonce'] : '';
+	if( ! wp_verify_nonce( $nonce, 'tamatebako-fonts-mce-nonce' ) ){
+		die();
+	}
 
 	/* Var */
 	$css = '';

@@ -136,3 +136,15 @@ function tamatebako_comments_callback( $comment, $args, $depth ) {
 function tamatebako_comments_end_callback() {
 	echo '</li><!-- .comment -->';
 }
+
+/**
+ * Comment Moderation Notice
+ * Add message in the comment if the comment is submitted but not yet approved.
+ * Used to be a filter in 3.1.2 tamatebako_comment_moderation_notice()
+ * @since 3.1.9
+ */
+function tamatebako_comment_moderation_message(){
+	?>
+	<p class="comment-awaiting-moderation"><?php echo tamatebako_string( 'comment_moderation_message' );?></p>
+	<?php
+}

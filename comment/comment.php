@@ -15,6 +15,9 @@
 		</header><!-- .comment-meta -->
 
 		<div class="comment-content">
+			<?php if( '0' == $comment->comment_approved ){ ?>
+				<?php tamatebako_comment_moderation_message(); ?>
+			<?php } ?>
 			<?php comment_text(); ?>
 		</div><!-- .comment-content -->
 

@@ -112,3 +112,15 @@ function tamatebako_fonts_remove_websafe( $font ){
 	return $font;
 }
 
+/**
+ * Font Weight Options
+ */
+function tamatebako_fonts_font_weight_choices(){
+	$choices = array(
+		'lighter'   => 'lighter',
+		'normal'    => 'normal',
+		'bold'      => 'bold',
+		'bolder'    => 'bolder',
+	);
+	return apply_filters( 'tamatebako_fonts_font_weight_choices', $choices );
+}

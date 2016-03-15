@@ -68,10 +68,12 @@ function tamatebako_setup(){
 		add_filter( 'wp_link_pages_args', 'tamatebako_wp_link_pages', 5 );
 		add_filter( 'wp_link_pages_link', 'tamatebako_wp_link_pages_link', 5 );
 
+		/* Edit Post Link */
+		add_filter( 'edit_post_link', 'tamatebako_edit_post_link', 5, 3 );
+
 		/* Comments */
 		add_filter( 'get_comment_author_link', 'tamatebako_get_comment_author_link', 5 );
 		add_filter( 'get_comment_author_url_link', 'tamatebako_get_comment_author_url_link', 5 );
-		add_filter( 'comment_text', 'tamatebako_comment_moderation_notice', 5, 3 );
 
 	} // end admin conditional
 }
@@ -129,7 +131,7 @@ function tamatebako_styles(){
 
 	if( $parent_css ){
 		wp_register_style(
-			sanitize_title( $tamatebako->name . '-style' ),
+			esc_attr( $tamatebako->name . '-style' ),
 			esc_url( $parent_css ),
 			array(),
 			tamatebako_theme_version(),
@@ -140,7 +142,7 @@ function tamatebako_styles(){
 	/* == Register Child Theme CSS ( Only if child theme active ) == */
 	if( is_child_theme() ){
 		wp_register_style(
-			sanitize_title( $tamatebako->child . '-style' ),
+			esc_attr( $tamatebako->child . '-style' ),
 			esc_url( $stylesheet_uri ),
 			array( sanitize_title( $tamatebako->name ) . '-style' ),
 			tamatebako_child_theme_version(),
@@ -440,6 +442,19 @@ function tamatebako_wp_link_pages_link( $link ) {
 
 
 /**
+ * Wraps edit post link text with span
+ * @since 3.1.5
+ */
+function tamatebako_edit_post_link( $link, $id, $text ){
+	$class = 'post-edit-link';
+	$url   = get_edit_post_link( $id );
+	$text  = '<span class="post-edit-link-text">' . $text . '</span>';
+	$link  = '<a class="' . esc_attr( $class ) . '" href="' . esc_url( $url ) . '">' . $text . '</a>';
+	return $link;
+}
+
+
+/**
  * Adds microdata to the comment author link.
  * @author Justin Tadlock <justintadlock@gmail.com>
  * @since  3.0.0
@@ -480,19 +495,4 @@ function tamatebako_get_comment_author_url_link( $link ) {
 	);
 
 	return preg_replace( $patterns, $replaces, $link );
-}
-
-
-/**
- * Comment Moderation Notice
- * Add message in the comment if the comment is submitted but not yet approved.
- * @since 3.1.2
- */
-function tamatebako_comment_moderation_notice( $comment_text, $comment, $args ){
-	/* if comment not approved. */
-	if ( '0' == $comment->comment_approved ){
-		$message = '<p class="comment-awaiting-moderation">' . tamatebako_string( 'comment_moderation_message' ) . '</p>';
-		$comment_text = $message . $comment_text;
-	}
-	return $comment_text;
 }

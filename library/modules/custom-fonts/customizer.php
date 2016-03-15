@@ -63,7 +63,31 @@ function tamatebako_fonts_customizer_register( $wp_customize ) {
 				)
 			)
 		);
-	}
+
+		/* === FONT WEIGHT === */
+		if( isset( $section_data['font_weight'] ) && $section_data['font_weight'] ){
+
+			$section_weight = $section . '_weight';
+
+			/* Setting */
+			$wp_customize->add_setting( $section_weight, array(
+				'default'             => esc_attr( $section_data['font_weight'] ),
+				'type'                => 'theme_mod',
+				'capability'          => 'edit_theme_options',
+				'sanitize_callback'   => 'tamatebako_fonts_font_weight_sanitize',
+			));
+
+			/* Control */
+			$wp_customize->add_control( $section_weight, array(
+				'label'    => esc_html( $labels['font_weight'] ),
+				'section'  => $section,
+				'settings' => $section_weight,
+				'type'     => 'select',
+				'choices'  => tamatebako_fonts_font_weight_choices(),
+			) );
+		}
+
+	} // end foreach
 }
 
 /**
@@ -102,4 +126,16 @@ function tamatebako_fonts_sanitize( $input ){
 
 	/* return empty if not valid. */
 	return '';
+}
+
+
+/**
+ * Sanitize Font Weight Option
+ */
+function tamatebako_fonts_font_weight_sanitize( $input ){
+	$weights = tamatebako_fonts_font_weight_choices();
+	if ( array_key_exists( $input, $weights ) ){
+		return $input;
+	}
+	return 'normal';
 }

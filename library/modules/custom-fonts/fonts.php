@@ -76,6 +76,12 @@ function tamatebako_fonts_heading(){
 			'weight'  => array( '100', '300', '400', '700' ),
 			'subset'  => array( 'latin', 'latin-ext','cyrillic', 'cyrillic-ext', 'greek', 'greek-ext', 'vietnamese' ),
 		),
+		'Rancho' => array(
+			'name' => 'Rancho',
+			'family' => '"Rancho",cursive',
+			'weight'  => array( '400' ),
+			'subset'  => array( 'latin' ),
+		),
 		'Satisfy' => array(
 			'name' => 'Satisfy',
 			'family' => '"Satisfy",cursive',

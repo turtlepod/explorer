@@ -45,7 +45,7 @@ function tamatebako_post_format_aside_infinity( $content ) {
 		if ( have_comments() || comments_open() ){
 			$infinity = '<a class="comments-link" href="' . esc_url( get_permalink() ) . '">' . number_format_i18n( get_comments_number() ) . '</a>';
 		}
-		$content .= ' ' . $infinity;
+		$content .= apply_filters( 'tamatebako_post_format_aside_infinity', ' ' . $infinity );
 	}
 
 	return $content;

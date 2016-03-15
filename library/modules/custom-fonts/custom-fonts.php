@@ -200,6 +200,14 @@ function tamatebako_fonts_print_style(){
 
 		}
 
+		/* Get font weight */
+		if( isset( $section_data['font_weight'] ) && $section_data['font_weight'] ){
+			$font_weight = get_theme_mod( $section . '_weight', esc_attr( $section_data['font_weight'] ) );
+
+			$target_element = $section_data['target'];
+			$css .= "{$target_element}{font-weight:{$font_weight};}";
+		}
+
 	}
 
 	/* PRINT CSS */

@@ -405,7 +405,7 @@ body {
 	hyphens: auto;
 }
 /* Admin Bar Fix */
-#wpadminbar input{
+.adminbar-input{
 	display: inline;
 	background: none;
 }

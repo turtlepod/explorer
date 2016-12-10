@@ -18,7 +18,7 @@ function explorer_theme_setup(){
 	$back_compat_args = array(
 		'theme_name'   => 'Explorer',
 		'wp_requires'  => '4.1.0',
-		'php_requires' => '5.2.4',
+		'php_requires' => '5.3.0',
 	);
 	add_theme_support( 'tamatebako-back-compat', $back_compat_args );
 	if( ! tamatebako_minimum_requirement( $back_compat_args ) ) return;

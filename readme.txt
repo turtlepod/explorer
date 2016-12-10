@@ -1,11 +1,11 @@
 === Explorer ===
 Contributors: turtlepod
 Requires at least: 4.1
-Tested up to: 4.4
-Version: 2.2.1
+Tested up to: 4.7
+Version: 2.3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: light, one-column, responsive-layout, custom-background, editor-style, post-formats, threaded-comments, translation-ready
+Tags: one-column, custom-background, editor-style, post-formats, threaded-comments, translation-ready
 
 == Description ==
 
@@ -22,6 +22,10 @@ For more info please visit theme page: [Explorer WordPress Theme](http://genbume
 3. Click Activate to use your new theme right away.
 
 == Changelog ==
+
+= 2.3.0 - 10.DEC.2016 =
+
+* WP 4.7 Compat
 
 = 2.2.1 - 14.MAR.2015 =
 
